@@ -41,6 +41,10 @@ It includes user authentication, product listing, cart management, and filtering
 ### 🎯 Product Filter (Min/Max)
 <img width="1918" height="937" alt="image" src="https://github.com/user-attachments/assets/b3ea0c40-5e56-44b8-adec-50e368747fce" />
 
+## Deployment Links
+p]
+- **Frontend (Netlify):** [Live Demo]((https://stylec.netlify.app/))  
+- **Backend (Vercel):** [API](https://project-pied-rho-56.vercel.app)  
 
 
 
