@@ -8,8 +8,8 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  // ✅ Direct backend URL
-  const API_URL = "http://localhost:5000";
+  // ✅ Use your deployed backend URL
+  const API_URL = "https://citystyle-backend.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,7 +32,7 @@ const Login = () => {
       if (error.response && error.response.data.message) {
         alert("❌ " + error.response.data.message);
       } else {
-        alert("Login failed. Please try again.");
+        alert("❌ Login failed. Please try again.");
       }
       setPassword("");
     } finally {

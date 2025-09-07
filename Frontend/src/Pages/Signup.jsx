@@ -11,8 +11,8 @@ const Signup = () => {
     password: "",
   });
 
-  // ✅ Direct backend URL (no Vite env)
-  const API_URL = "http://localhost:5000";
+  // ✅ Use your deployed backend URL
+  const API_URL = "https://citystyle-backend.onrender.com";
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -30,7 +30,7 @@ const Signup = () => {
       if (err.response && err.response.data.message) {
         alert("❌ " + err.response.data.message);
       } else {
-        alert("❌ Server not reachable. Check backend is running.");
+        alert("❌ Server not reachable. Please try again later.");
       }
       console.error("Signup error:", err.response?.data || err.message);
     }
