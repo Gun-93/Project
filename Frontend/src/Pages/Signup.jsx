@@ -13,17 +13,17 @@ const Signup = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await axios.post("/api/users/signup", formData);
-      alert("✅ Registration successful!");
-      navigate("/login");
-    } catch (err) {
-      alert("❌ Error occurred during registration.");
-      console.error(err);
-    }
-  };
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    await axios.post(`${import.meta.env.VITE_API_URL}/api/users/signup`, formData);
+    alert("✅ Registration successful!");
+    navigate("/login");
+  } catch (err) {
+    alert("❌ Error occurred during registration.");
+    console.error(err.response?.data || err.message);
+  }
+};
 
   return (
     <div
