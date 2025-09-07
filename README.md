@@ -20,8 +20,8 @@ It includes user authentication, product listing, cart management, and filtering
 ---
 ## Deployment Links
 
-- **Frontend (Netlify):** [Live Demo](https://stylec.netlify.app)  
-- **Backend (Vercel):** [API](https://project-pied-rho-56.vercel.app)  
+- **Frontend (Netlify):** [Live Demo](https://stylec.netlify.app/)  
+- **Backend (Vercel):** [API](https://citystyle-backend.onrender.com)  
 
 
 ## 🖼️ Screenshots 
