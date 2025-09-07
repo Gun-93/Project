@@ -8,14 +8,17 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+  // ✅ Direct backend URL
+  const API_URL = "http://localhost:5000";
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/users/login`,
-        { email, password }
-      );
+      const response = await axios.post(`${API_URL}/api/users/login`, {
+        email,
+        password,
+      });
 
       const data = response.data;
       if (data && data.token) {
@@ -99,7 +102,3 @@ const Login = () => {
 };
 
 export default Login;
-
-
-
-
